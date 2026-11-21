@@ -1,0 +1,99 @@
+{
+  "note": "absent vs empty-string vs insert: 0010 is deleted, 1100 inserted",
+  "old_root": "sha256:38e2bd9f97fb7588c9faaba759d85c0fd5a1a9ed8514df4c2b49aba1811f6b8f",
+  "new_root": "sha256:a58437fa1dc8c565615c23a4f297f92c57385222540e7edd63af72ffb77f8236",
+  "policy": {
+    "allowed_prefixes": [
+      "0001",
+      "001",
+      "011",
+      "11",
+      "100"
+    ]
+  },
+  "declared": [
+    {
+      "key": "0001",
+      "kind": "unchanged"
+    },
+    {
+      "key": "0010",
+      "kind": "delete"
+    },
+    {
+      "key": "0110",
+      "kind": "update"
+    },
+    {
+      "key": "1100",
+      "kind": "insert"
+    },
+    {
+      "key": "1001",
+      "kind": "unchanged"
+    }
+  ],
+  "proof": {
+    "leaves": [
+      {
+        "key": "0001",
+        "old_value": "alpha",
+        "new_value": "alpha"
+      },
+      {
+        "key": "0010",
+        "old_value": "",
+        "new_value": null
+      },
+      {
+        "key": "0110",
+        "old_value": "gamma",
+        "new_value": "gamma2"
+      },
+      {
+        "key": "1001",
+        "old_value": "kept",
+        "new_value": "kept"
+      },
+      {
+        "key": "1100",
+        "old_value": null,
+        "new_value": "fresh"
+      }
+    ],
+    "citations": [
+      {
+        "prefix": "0000",
+        "hash": "empty"
+      },
+      {
+        "prefix": "0011",
+        "hash": "empty"
+      },
+      {
+        "prefix": "010",
+        "hash": "empty"
+      },
+      {
+        "prefix": "0111",
+        "hash": "empty"
+      },
+      {
+        "prefix": "1000",
+        "hash": "empty"
+      },
+      {
+        "prefix": "101",
+        "hash": "empty"
+      },
+      {
+        "prefix": "1101",
+        "hash": "empty"
+      },
+      {
+        "prefix": "111",
+        "hash": "empty"
+      }
+    ]
+  }
+}

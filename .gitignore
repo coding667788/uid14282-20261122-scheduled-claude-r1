@@ -3,3 +3,6 @@ __pycache__/
 .runtime-tmp/
 .env
 .env.*
+
+# example sqlite state
+examples/ledger/*.sqlite*

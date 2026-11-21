@@ -1,0 +1,247 @@
+{
+  "note": "000100 is overwritten twice and returns to its old value; 100000 is untouched; 010000 is overwritten in two hops",
+  "inventory": {
+    "root": "sha256:c65fac33c2c2d3a0e480ce1b400d74996952dc334a88b356e36ff86727bc4717",
+    "proof": {
+      "leaves": [
+        {
+          "key": "000100",
+          "value": "a"
+        },
+        {
+          "key": "010000",
+          "value": "x"
+        },
+        {
+          "key": "100000",
+          "value": "p"
+        }
+      ],
+      "citations": [
+        {
+          "prefix": "0000",
+          "hash": "empty"
+        },
+        {
+          "prefix": "000101",
+          "hash": "empty"
+        },
+        {
+          "prefix": "00011",
+          "hash": "empty"
+        },
+        {
+          "prefix": "001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "010001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "01001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "0101",
+          "hash": "sha256:cbb9e6997882245dc5b10c3f1938ba3e6b246a4d5af460b295003bf5d8d95f88"
+        },
+        {
+          "prefix": "011",
+          "hash": "empty"
+        },
+        {
+          "prefix": "100001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "10001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "1001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "101",
+          "hash": "empty"
+        },
+        {
+          "prefix": "11",
+          "hash": "empty"
+        }
+      ]
+    }
+  },
+  "s_keys": [
+    "000100",
+    "010000",
+    "100000"
+  ],
+  "chain": [
+    {
+      "version": 1,
+      "old_root": "sha256:c65fac33c2c2d3a0e480ce1b400d74996952dc334a88b356e36ff86727bc4717",
+      "new_root": "sha256:6fa7abb32f6d297409d5958ccff63c3404aad3f647fa0f057addb9a1aeb69803",
+      "policy": {
+        "allowed_prefixes": [
+          "0",
+          "1"
+        ]
+      },
+      "proof": {
+        "leaves": [
+          {
+            "key": "000100",
+            "old_value": "a",
+            "new_value": "A"
+          },
+          {
+            "key": "010000",
+            "old_value": "x",
+            "new_value": "x2"
+          }
+        ],
+        "citations": [
+          {
+            "prefix": "0000",
+            "hash": "empty"
+          },
+          {
+            "prefix": "000101",
+            "hash": "empty"
+          },
+          {
+            "prefix": "00011",
+            "hash": "empty"
+          },
+          {
+            "prefix": "001",
+            "hash": "empty"
+          },
+          {
+            "prefix": "010001",
+            "hash": "empty"
+          },
+          {
+            "prefix": "01001",
+            "hash": "empty"
+          },
+          {
+            "prefix": "0101",
+            "hash": "sha256:cbb9e6997882245dc5b10c3f1938ba3e6b246a4d5af460b295003bf5d8d95f88"
+          },
+          {
+            "prefix": "011",
+            "hash": "empty"
+          },
+          {
+            "prefix": "1",
+            "hash": "sha256:7f2f37cb4851eaf9c7d460062cceb40043745893c8ebdb41ff947d7101f6039a"
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "old_root": "sha256:6fa7abb32f6d297409d5958ccff63c3404aad3f647fa0f057addb9a1aeb69803",
+      "new_root": "sha256:7be376e8f4eb296b705c5f7c0580eafa9ddcec60fe6a95c99777f4585ab6803e",
+      "policy": {
+        "allowed_prefixes": [
+          "0",
+          "1"
+        ]
+      },
+      "proof": {
+        "leaves": [
+          {
+            "key": "010000",
+            "old_value": "x2",
+            "new_value": "x3"
+          },
+          {
+            "key": "010100",
+            "old_value": "y",
+            "new_value": "Y"
+          }
+        ],
+        "citations": [
+          {
+            "prefix": "00",
+            "hash": "sha256:de4d8b60838eaf740d5f7de7f5908182a302dd95cc0f0de3e0683bb3c019150f"
+          },
+          {
+            "prefix": "010001",
+            "hash": "empty"
+          },
+          {
+            "prefix": "01001",
+            "hash": "empty"
+          },
+          {
+            "prefix": "010101",
+            "hash": "empty"
+          },
+          {
+            "prefix": "01011",
+            "hash": "empty"
+          },
+          {
+            "prefix": "011",
+            "hash": "empty"
+          },
+          {
+            "prefix": "1",
+            "hash": "sha256:7f2f37cb4851eaf9c7d460062cceb40043745893c8ebdb41ff947d7101f6039a"
+          }
+        ]
+      }
+    },
+    {
+      "version": 3,
+      "old_root": "sha256:7be376e8f4eb296b705c5f7c0580eafa9ddcec60fe6a95c99777f4585ab6803e",
+      "new_root": "sha256:08274600e4b385526a4f3765cd54365e243f2456016c1a4d03c4adbbbdb2410e",
+      "policy": {
+        "allowed_prefixes": [
+          "0",
+          "1"
+        ]
+      },
+      "proof": {
+        "leaves": [
+          {
+            "key": "000100",
+            "old_value": "A",
+            "new_value": "a"
+          }
+        ],
+        "citations": [
+          {
+            "prefix": "0000",
+            "hash": "empty"
+          },
+          {
+            "prefix": "000101",
+            "hash": "empty"
+          },
+          {
+            "prefix": "00011",
+            "hash": "empty"
+          },
+          {
+            "prefix": "001",
+            "hash": "empty"
+          },
+          {
+            "prefix": "01",
+            "hash": "sha256:0d9b77cdd9e66236bc613573e2bb212094cd3805a8bbd4c51408270d1b1ea08c"
+          },
+          {
+            "prefix": "1",
+            "hash": "sha256:7f2f37cb4851eaf9c7d460062cceb40043745893c8ebdb41ff947d7101f6039a"
+          }
+        ]
+      }
+    }
+  ]
+}

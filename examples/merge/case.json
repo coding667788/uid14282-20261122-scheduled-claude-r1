@@ -1,0 +1,109 @@
+{
+  "note": "left cites the whole 0100/0101 region; right expands it",
+  "old_root": "sha256:cb50ef16356f7adc9562c3b4d3dcc9c8b5a5b3d52fac841bbdf3f3270d3c815e",
+  "new_root": "sha256:b7b069ff0e7a734e9579835a217b9051b1ce2d05fe7e8ac0b322a160103f9ecf",
+  "policy": {
+    "allowed_prefixes": [
+      "0001"
+    ]
+  },
+  "proofs": [
+    {
+      "leaves": [
+        {
+          "key": "00010",
+          "old_value": "a",
+          "new_value": "A"
+        },
+        {
+          "key": "01000",
+          "old_value": "x",
+          "new_value": "x"
+        }
+      ],
+      "citations": [
+        {
+          "prefix": "0000",
+          "hash": "empty"
+        },
+        {
+          "prefix": "00011",
+          "hash": "empty"
+        },
+        {
+          "prefix": "001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "01001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "0101",
+          "hash": "sha256:fb554c723d4116a2d149d8b38cb4b4718a2ef66ffd7909e98ee7500f346bbadc"
+        },
+        {
+          "prefix": "011",
+          "hash": "empty"
+        },
+        {
+          "prefix": "1",
+          "hash": "sha256:db2164a8f460e4fb2b2ef22c3aa06ac485757bb80773108f1d40cfbc66b9960f"
+        }
+      ]
+    },
+    {
+      "leaves": [
+        {
+          "key": "00010",
+          "old_value": "a",
+          "new_value": "A"
+        },
+        {
+          "key": "01010",
+          "old_value": "y",
+          "new_value": "y"
+        }
+      ],
+      "citations": [
+        {
+          "prefix": "0000",
+          "hash": "empty"
+        },
+        {
+          "prefix": "00011",
+          "hash": "empty"
+        },
+        {
+          "prefix": "001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "0100",
+          "hash": "sha256:0ef7214eace6ba3353df9d71b9ce39f6fd4ff7b2c48a85d4e50a62c127f509b6"
+        },
+        {
+          "prefix": "01011",
+          "hash": "empty"
+        },
+        {
+          "prefix": "011",
+          "hash": "empty"
+        },
+        {
+          "prefix": "1",
+          "hash": "sha256:db2164a8f460e4fb2b2ef22c3aa06ac485757bb80773108f1d40cfbc66b9960f"
+        }
+      ]
+    }
+  ],
+  "expected_union_boundary": [
+    "0000",
+    "00011",
+    "001",
+    "01001",
+    "01011",
+    "011",
+    "1"
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "checkpoints": [
+    {
+      "checkpoint_id": "cp-A",
+      "root": "sha256:122312002e90942eefe0bc0765cb569b84d09f9c66d7bb7d5cde123049d12dc9",
+      "generation": 10,
+      "policy_version": 1,
+      "label": ""
+    },
+    {
+      "checkpoint_id": "cp-B",
+      "root": "sha256:a9b02ef26fdabf768bf95f88d29e358c400a02f53a697841efc6a427d95af0de",
+      "generation": 11,
+      "policy_version": 1,
+      "label": ""
+    },
+    {
+      "checkpoint_id": "cp-C",
+      "root": "sha256:22c9f5517b0a45d68dd3ce0b720237d08cf52a0bdfc45a898af63f156f35df13",
+      "generation": 12,
+      "policy_version": 1,
+      "label": ""
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e1",
+      "from": "cp-A",
+      "to": "cp-B",
+      "generation": 11,
+      "policy_version": 1,
+      "archive_use": "cold-archive",
+      "proof": {
+        "leaves": [
+          {
+            "key": "0001",
+            "old_value": "alpha",
+            "new_value": "ALPHA"
+          }
+        ],
+        "citations": [
+          {
+            "prefix": "0000",
+            "hash": "empty"
+          },
+          {
+            "prefix": "001",
+            "hash": "sha256:1136def016f27a32e8f159292aa721b3b79bde632d6b7df7edbc2e24e8428014"
+          },
+          {
+            "prefix": "01",
+            "hash": "sha256:bf3ad37e7112869788c671d65c1082687d4b32e9bb4817cdc31f6a40496ae160"
+          },
+          {
+            "prefix": "1",
+            "hash": "empty"
+          }
+        ]
+      },
+      "kept_branches": [
+        "0000",
+        "001",
+        "01",
+        "1"
+      ],
+      "categories": [
+        "privacy"
+      ],
+      "policy": {
+        "allowed_prefixes": [
+          "0",
+          "1"
+        ]
+      }
+    },
+    {
+      "edge_id": "e2",
+      "from": "cp-B",
+      "to": "cp-C",
+      "generation": 12,
+      "policy_version": 1,
+      "archive_use": "cold-archive",
+      "proof": {
+        "leaves": [
+          {
+            "key": "0100",
+            "old_value": "gamma",
+            "new_value": "GAMMA"
+          }
+        ],
+        "citations": [
+          {
+            "prefix": "00",
+            "hash": "sha256:c8d75c15046ac0d8c0d19e2570118ddaf368beb8290999418859666d920e035a"
+          },
+          {
+            "prefix": "0101",
+            "hash": "empty"
+          },
+          {
+            "prefix": "011",
+            "hash": "empty"
+          },
+          {
+            "prefix": "1",
+            "hash": "empty"
+          }
+        ]
+      },
+      "kept_branches": [
+        "00",
+        "0101",
+        "011",
+        "1"
+      ],
+      "categories": [
+        "privacy"
+      ],
+      "policy": {
+        "allowed_prefixes": [
+          "0",
+          "1"
+        ]
+      }
+    }
+  ],
+  "votes": [
+    {
+      "vote_id": "v1",
+      "edge_id": "e1",
+      "category": "privacy",
+      "reviewer_id": "alice",
+      "institution_id": "inst-1",
+      "policy_version": 1,
+      "old_root": "sha256:122312002e90942eefe0bc0765cb569b84d09f9c66d7bb7d5cde123049d12dc9",
+      "new_root": "sha256:a9b02ef26fdabf768bf95f88d29e358c400a02f53a697841efc6a427d95af0de",
+      "issued_at": 0,
+      "expires_at": 10000
+    },
+    {
+      "vote_id": "v2",
+      "edge_id": "e1",
+      "category": "privacy",
+      "reviewer_id": "bob",
+      "institution_id": "inst-2",
+      "policy_version": 1,
+      "old_root": "sha256:122312002e90942eefe0bc0765cb569b84d09f9c66d7bb7d5cde123049d12dc9",
+      "new_root": "sha256:a9b02ef26fdabf768bf95f88d29e358c400a02f53a697841efc6a427d95af0de",
+      "issued_at": 0,
+      "expires_at": 10000
+    },
+    {
+      "vote_id": "v3",
+      "edge_id": "e2",
+      "category": "privacy",
+      "reviewer_id": "carol",
+      "institution_id": "inst-3",
+      "policy_version": 1,
+      "old_root": "sha256:a9b02ef26fdabf768bf95f88d29e358c400a02f53a697841efc6a427d95af0de",
+      "new_root": "sha256:22c9f5517b0a45d68dd3ce0b720237d08cf52a0bdfc45a898af63f156f35df13",
+      "issued_at": 0,
+      "expires_at": 10000
+    },
+    {
+      "vote_id": "v4",
+      "edge_id": "e2",
+      "category": "privacy",
+      "reviewer_id": "dave",
+      "institution_id": "inst-4",
+      "policy_version": 1,
+      "old_root": "sha256:a9b02ef26fdabf768bf95f88d29e358c400a02f53a697841efc6a427d95af0de",
+      "new_root": "sha256:22c9f5517b0a45d68dd3ce0b720237d08cf52a0bdfc45a898af63f156f35df13",
+      "issued_at": 0,
+      "expires_at": 10000
+    }
+  ],
+  "institutions": [
+    {
+      "subject": "alice",
+      "institution_id": "inst-1"
+    },
+    {
+      "subject": "bob",
+      "institution_id": "inst-2"
+    },
+    {
+      "subject": "carol",
+      "institution_id": "inst-3"
+    },
+    {
+      "subject": "dave",
+      "institution_id": "inst-4"
+    }
+  ]
+}

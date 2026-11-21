@@ -1,0 +1,116 @@
+{
+  "note": "shards arrive shuffled; each is bound to the same root pair",
+  "old_root": "sha256:8cda349668e5c911d224e69859c1156c466851667731618538d8bc5c797fd82a",
+  "new_root": "sha256:be24d45b3b85b101bf8b8c2dfad6b20299f6e0460c3374fc5717041707224380",
+  "proof": {
+    "leaves": [
+      {
+        "key": "000100",
+        "old_value": "a",
+        "new_value": "A"
+      },
+      {
+        "key": "010000",
+        "old_value": "x",
+        "new_value": "X"
+      }
+    ],
+    "citations": [
+      {
+        "prefix": "0000",
+        "hash": "empty"
+      },
+      {
+        "prefix": "000101",
+        "hash": "empty"
+      },
+      {
+        "prefix": "00011",
+        "hash": "empty"
+      },
+      {
+        "prefix": "001",
+        "hash": "empty"
+      },
+      {
+        "prefix": "010001",
+        "hash": "empty"
+      },
+      {
+        "prefix": "01001",
+        "hash": "empty"
+      },
+      {
+        "prefix": "0101",
+        "hash": "empty"
+      },
+      {
+        "prefix": "011",
+        "hash": "empty"
+      },
+      {
+        "prefix": "1",
+        "hash": "sha256:812cca6ea98066717cc4ea9f524fa99b7224145ecf620a0d62af50e51d90b2cd"
+      }
+    ]
+  },
+  "shards": [
+    {
+      "shard_id": "third",
+      "old_root": "sha256:8cda349668e5c911d224e69859c1156c466851667731618538d8bc5c797fd82a",
+      "new_root": "sha256:be24d45b3b85b101bf8b8c2dfad6b20299f6e0460c3374fc5717041707224380",
+      "citations": [
+        {
+          "prefix": "00011",
+          "hash": "empty"
+        },
+        {
+          "prefix": "01001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "1",
+          "hash": "sha256:812cca6ea98066717cc4ea9f524fa99b7224145ecf620a0d62af50e51d90b2cd"
+        }
+      ]
+    },
+    {
+      "shard_id": "first",
+      "old_root": "sha256:8cda349668e5c911d224e69859c1156c466851667731618538d8bc5c797fd82a",
+      "new_root": "sha256:be24d45b3b85b101bf8b8c2dfad6b20299f6e0460c3374fc5717041707224380",
+      "citations": [
+        {
+          "prefix": "0000",
+          "hash": "empty"
+        },
+        {
+          "prefix": "001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "0101",
+          "hash": "empty"
+        }
+      ]
+    },
+    {
+      "shard_id": "second",
+      "old_root": "sha256:8cda349668e5c911d224e69859c1156c466851667731618538d8bc5c797fd82a",
+      "new_root": "sha256:be24d45b3b85b101bf8b8c2dfad6b20299f6e0460c3374fc5717041707224380",
+      "citations": [
+        {
+          "prefix": "000101",
+          "hash": "empty"
+        },
+        {
+          "prefix": "010001",
+          "hash": "empty"
+        },
+        {
+          "prefix": "011",
+          "hash": "empty"
+        }
+      ]
+    }
+  ]
+}

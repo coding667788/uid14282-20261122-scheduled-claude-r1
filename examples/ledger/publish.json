@@ -1,0 +1,77 @@
+{
+  "start_checkpoint": "cp-A",
+  "end_checkpoint": "cp-C",
+  "policy_version": 1,
+  "logical_clock": 5,
+  "archive_use": "cold-archive",
+  "s_keys": [
+    "0001",
+    "0100"
+  ],
+  "inventory": {
+    "root": "sha256:122312002e90942eefe0bc0765cb569b84d09f9c66d7bb7d5cde123049d12dc9",
+    "proof": {
+      "leaves": [
+        {
+          "key": "0001",
+          "value": "alpha"
+        },
+        {
+          "key": "0100",
+          "value": "gamma"
+        }
+      ],
+      "citations": [
+        {
+          "prefix": "0000",
+          "hash": "empty"
+        },
+        {
+          "prefix": "001",
+          "hash": "sha256:1136def016f27a32e8f159292aa721b3b79bde632d6b7df7edbc2e24e8428014"
+        },
+        {
+          "prefix": "0101",
+          "hash": "empty"
+        },
+        {
+          "prefix": "011",
+          "hash": "empty"
+        },
+        {
+          "prefix": "1",
+          "hash": "empty"
+        }
+      ]
+    }
+  },
+  "request_id": "pub-0001",
+  "plan": {
+    "edge_ids": [
+      "e1",
+      "e2"
+    ],
+    "votes": [
+      {
+        "hop": 1,
+        "category": "privacy",
+        "vote_id": "v1"
+      },
+      {
+        "hop": 1,
+        "category": "privacy",
+        "vote_id": "v2"
+      },
+      {
+        "hop": 2,
+        "category": "privacy",
+        "vote_id": "v3"
+      },
+      {
+        "hop": 2,
+        "category": "privacy",
+        "vote_id": "v4"
+      }
+    ]
+  }
+}
